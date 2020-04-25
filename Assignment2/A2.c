@@ -8,7 +8,7 @@ int num1 = 5, num2 = 10;
 swap( &num1, &num2);
 
 printf("num1 = %d\n", num1);
-printf("num2 = %d", num2);
+printf("num2 = %d\n", num2);
 return 0;
 }
 // pointer n1 and n2 stores the address of num1 and num2 respectively
@@ -22,7 +22,7 @@ temp = *n1;
 */
 
 //struct with char,int,char     &       int,char[with sise 1,2,3,4,5],int
-struct s1 {
+/*struct s1 {
 
     char a;
     int b;
@@ -54,8 +54,11 @@ int main() {
     printf("Size of Structure 1: %d\n", sizeof(ST1));
     printf("Size of Structure 2: %d\n", sizeof(ST2));
 }
+*/
+
 //1D Array using malloc()
-/*int main()
+/*
+int main()
 {
 int i ;
 int count = 0 ;
@@ -68,21 +71,24 @@ p[i] = ++count;
 for (i = 0; i < total_elements; i++)
 printf("%d ", p[i]);
 
+printf("\n");
+
 return 0;
 }
 */
+
 //Two dimensional using malloc 
-/*int main()
+int main()
 {
     int i, j, c=0;
-    int r=3;
+    int row=3;
     int col=3;
  	 
-    int **p = (int **)malloc(r * sizeof(int *));
-    for (i=0; i<r; i++) 
+    int **p = (int **)malloc(row * sizeof(int *));
+    for (i=0; i<row; i++) 
         p[i] = (int *)malloc(col * sizeof(int));
  
-    for (i = 0; i < r; i++){
+    for (i = 0; i < row; i++){
     	for (j = 0; j < col; j++){
     		 p[i][j] = ++c;
     		 printf("%d ", p[i][j]);	
@@ -92,5 +98,5 @@ return 0;
  
         return 0;
 }
-*/
+
 

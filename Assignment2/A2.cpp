@@ -8,11 +8,18 @@ int total_elements=5;
 
 int *p = new int[total_elements];
 
+for (i = 0; i < total_elements; i++)
+printf("%d ", p[i]);
+
+printf("\n");
+
 for (i = 0; i<total_elements; i++)
 p[i] = ++c;
 
 for (i = 0; i < total_elements; i++)
-printf("%d", p[i]);
+printf("%d ", p[i]);
+
+printf("\n");
 
 return 0;
 }
@@ -33,8 +40,7 @@ int main()
     for (i = 0; i < r; i++){
         for (j = 0; j < col; j++){
 	        p[i][j] = ++c;
-            printf("%d ", p[i][j]);
-            //printf("%d", p[i][j]);	
+            printf("%d ", p[i][j]);	
     	}
         printf("\n");
     }
